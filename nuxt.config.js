@@ -36,11 +36,13 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     //'@nuxtjs/pwa',
+
+      '@nuxtjs/dotenv',
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {
-    baseURL: "http://localhost:8000/api"
+    baseURL: process.env.API_URL //"http://localhost:8000/api"
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
